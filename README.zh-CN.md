@@ -1,4 +1,4 @@
-# {{ .TplCtx.RepoName }}
+# GoLib
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/gookit/goutil?style=flat-square)
 [![Unit-Tests](https://github.com/gookit/goutil/actions/workflows/go.yml/badge.svg)](https://github.com/gookit/goutil/actions/workflows/go.yml)
@@ -15,7 +15,7 @@
 ## Install
 
 ```shell
-go get github.com/{{ .TplCtx.RepoPath }}
+go get github.com/gookit/golib
 ```
 
 ## Usage
