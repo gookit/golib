@@ -8,9 +8,13 @@ import (
 )
 
 func TestBox_Add(t *testing.T) {
-	box := objbox.New()
+	box := objbox.New[any]()
 	box.Add("obj1", &testObj{Name: "inhere"})
 
+	// get testObj by name "obj1"
 	obj1 := box.Get("obj1").(*testObj)
 	assert.Eq(t, "inhere", obj1.Name)
+
+	// obj1 := box.Get("obj1").(*testObj)
+	// assert.Eq(t, "inhere", obj1.Name)
 }
